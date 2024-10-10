@@ -1,20 +1,86 @@
 body {
-	background-color: #9fa4ba;
-	font-family: Arial, sans-serif;
-	color: #333;
-	margin: 0;
-	padding: 0;
+    background-color: #9fa4ba;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
+h1 {
+    color: #2c3e50;
+}
+
+h2, h3 {
     color: #2c3e50;
     text-align: center;
 }
 
 #about {
-    text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 
+#portfolio {
+    padding: 10px 20px;
+    text-align: center;
+}
 
+.header-container {
+    position: relative;
+    padding: 20px;
+}
 
+.header-container h1 {
+    margin: 0;
+    text-align: center;
+	font-size: 2.0em;
+}
+
+.contact-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.85em;
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        padding-top: 60px;
+    }
+
+    .contact-info {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header-container h1 {
+        text-align: center;
+    }
+}
